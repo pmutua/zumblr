@@ -1,24 +1,48 @@
-# README
+# Zumblr
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### Author
+[Philip Mutua](philipmutua.netlify.com)
 
-Things you may want to cover:
+# Description 
+An application that allows users to share their stories and other users can comment.
+[Deployment in Progress ](philipmutua.netlify.com)
 
-* Ruby version
+# Ruby Version
 
-* System dependencies
+* Ruby v2.3.1
+* Rails 5.1.4
 
-* Configuration
+# Installation
 
-* Database creation
+`git clone https://github.com/pmutua/zumblr.git`
 
-* Database initialization
+`cd ~/zumblr`
 
-* How to run the test suite
+###### Database Creation 
+* In the terminal Run 
+	+ `rake db:create`
+    + `rake db:migrate`
 
-* Services (job queues, cache servers, search engines, etc.)
+###### Install System Dependencies 
+_Install system dependencies using bundler:_
 
-* Deployment instructions
+* Run `bundle install`
+* To run the application Run `rails server` or `rails s`
+* Open browser and type `localhost:3000` 
 
-* ...
+# Technologies Used
+* Ruby 
+* Rails 
+* Bootstrap
+* Devise 
+* Simple_form
+* Sass
+* CSS
+* Heroku - _deployment_
+
+# Licence
+[MIT](./LICENCE)
+
+# Contribution
+If you see something you could add to the application pull Requests are allowed and also don't forget to _follow me_
+[@iamPhilipMutua](https:twitter.com/iamPhilipMutua)on twitter.
