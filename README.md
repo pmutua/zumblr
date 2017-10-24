@@ -4,7 +4,7 @@
 [Philip Mutua](philipmutua.netlify.com)
 
 # Description 
-An application that allows users to share their stories and other users can comment.
+An application that enables users to share their stories and other users can comment.
 [Deployment in Progress ](philipmutua.netlify.com)
 
 # Ruby Version
