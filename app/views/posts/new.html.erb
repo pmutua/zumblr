@@ -1,18 +1,22 @@
 <h1>Make Somethig</h1>
 
 <%= form_for :post, url: posts_path do |f| %>
-	<p>
-		<% f.label :title %><br>
-		<%= f.text_field :title %>
-	</p>
 
-	<p>
-		<%= f.label :body %><br>
-		<%= f.text_area :body %>
-	</p>
-  
-	<p>
-		<%= f.submit %>
-	</p>
+
+		<form>
+		  <div class="form-group">
+		  	<%= f.label :title %>
+		  	<%= f.text_field :title, class: "form-control" %>
+
+		  </div>
+		  <div class="form-group">
+				<%= f.label :body %>
+				<%= f.text_area :body , class: "form-control", style:"height:350px;" %>
+		  </div>
+		</form>
+		
+		<p>
+			<%= f.submit %>
+		</p>
 
 <% end %>

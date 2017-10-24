@@ -1,14 +1,60 @@
+
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Zumblr</title>
-    <%= csrf_meta_tags %>
+   <head>
+      <title>Zumblr</title>
+      <%= csrf_meta_tags %>
+      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Raleway:400,700' %>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+      <%= favicon_link_tag 'favicon.ico' %>
+   </head>
+   <body>
+      <div class="container-fluid">
+         <!-- Static navbar -->
+         <nav class="navbar navbar-default">
+            <div class="container-fluid">
+               <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+                  <%= link_to "Zumblr" , root_path, class:"navbar-brand" %> 
+               </div>
+               <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav">
+                     <li>
+                        <%= link_to "Posts" , root_path , class:"nav-text" %> 
+                     </li>
+                     <li>
+                        <%= link_to "Trending Posts" , root_path , class:"nav-text" %> 
+                     </li>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
-    <%= yield %>
-  </body>
+                     <li> 
+						<%= link_to "Make Post", new_post_path %>
+                     </li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                     <li><%= link_to "About" , root_path , class:"nav-text" %></li>
+                     <li><a href="../navbar-static-top/">Log In</a></li>
+                     <li><a href="../navbar-fixed-top/">Sign Up</a></li>
+                  </ul>
+               </div>
+               <!--/.nav-collapse -->
+            </div>
+            <!--/.container-fluid -->
+         </nav>
+      </div>
+      <!-- /container -->
+      <div class="container">
+         <% flash.each do |name, msg| %>
+         <%= content_tag(:div, msg, class: "alert") %>
+         <% end %>
+         <%= yield %>
+      </div>
+   </body>
 </html>
+
