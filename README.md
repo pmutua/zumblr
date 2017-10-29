@@ -5,7 +5,7 @@
 
 # Description 
 An application that enables users to share their stories and other users can comment.
-[Deployment in Progress ](philipmutua.netlify.com)
+[View Demo] (https://zumblr-app.herokuapp.com)
 
 # Ruby Version
 
