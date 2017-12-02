@@ -45,4 +45,4 @@ _Install system dependencies using bundler:_
 
 # Contribution
 If you see something you could add to the application pull Requests are allowed and also don't forget to _follow me_
-[@iamPhilipMutua](https://twitter.com/iamPhilipMutua)on twitter.
+[@itsPhilipMutua](https://twitter.com/iamPhilipMutua)on twitter.
